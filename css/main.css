@@ -85,13 +85,18 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+========================================================================== */
+
+.content-wrapper {
+  width: 90%;
+}
 
 /* Base HEADER and FOOTER styles */
 
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -99,17 +104,32 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
+  justify-content: center;
   list-style: none;
   flex-flow: row nowrap;
+  width: 50%;
 }
 
 header nav ul li {
   display: flex;
   justify-content: space-around;
+  padding: 0 30px;
+}
+
+.header-divider {
+  width: 100%;
+  padding: 10px 0 20px;
 }
 
 footer {
@@ -124,8 +144,29 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 55%;
+  margin: 50px 0;
 }
 
+footer p {
+  margin: 0;
+}
+
+.contact h4 {
+  padding: 20px 0;
+}
+
+.social {
+  padding: 50px 0;
+}
+
+.social h4 {
+  padding: 20px 0;
+}
+
+.copyright {
+  padding: 20px 0;
+}
 
 /* Base MAIN styles */
 
@@ -146,10 +187,52 @@ main aside .content-wrapper {
 
 /* MAIN PAGE - specific styles */
 
+.hero-area {
+  padding: 50px 0;
+}
+
+.reach-out {
+  padding: 50px 0;
+}
+
+.form-description h3 {
+  padding: 20px 0;
+}
+
+.form-description p {
+  padding-bottom: 30px;
+}
+
 main .form {
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+}
+
+.form-email {
+  padding: 1em 0;
+  margin-bottom: 20px;
+}
+
+.form-itinerary {
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+.features {
+  padding: 50px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features h2 {
+  padding-bottom: 60px;
+}
+
+.features article {
+  width: 65%;
 }
 
 main .features-items {
@@ -157,8 +240,60 @@ main .features-items {
   justify-content: center;
   text-align: center;
   flex-flow: column nowrap;
+  padding: 30px 0;
 }
 
+.features-icon {
+  padding-bottom: 40px;
+}
+
+.reviews {
+  padding: 50px 0;
+}
+
+.reviews h2 {
+  padding-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  padding: 20px 0;
+}
+
+
+/* ABOUT PAGE - specific styles */
+
+.contact-content {
+  margin: 0;
+}
+
+.contact-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  text-align: left;
+  width: 90%;
+}
+
+.contact-section h4, address {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* FAQ PAGE - specific styles */
+
+.banner {
+  padding: 50px 0 0 0;
+}
+
+.subheader {
+  padding-bottom: 40px;
+}
+
+.questions article {
+  padding-bottom: 50px;
+}
 
 
 /* ==========================================================================
