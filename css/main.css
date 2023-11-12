@@ -87,8 +87,11 @@ textarea {
    Author's custom styles
 ========================================================================== */
 
+
 .content-wrapper {
   width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Base HEADER and FOOTER styles */
@@ -135,6 +138,7 @@ header nav ul li {
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -150,18 +154,34 @@ footer .content-wrapper {
 
 footer p {
   margin: 0;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
 }
 
 .contact h4 {
   padding: 20px 0;
 }
 
+.contact address {
+  justify-content: center;
+}
+
 .social {
   padding: 50px 0;
+  justify-content: center;
 }
 
 .social h4 {
   padding: 20px 0;
+}
+
+.social address {
+  justify-content: center;
 }
 
 .copyright {
@@ -382,10 +402,236 @@ main .features-items {
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  
+  .content-wrapper {
+    width: 640px;
+  }
+
+  header {
+    padding: 33px 0;
+  }
+
+  header img {
+    width: 30%;
+  }
+  
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  header nav ul {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-area {
+    padding: 100px 0;
+  }
+
+  .hero-area h1 {
+    margin: 0;
+  }
+
+  main aside .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  main aside .reach-out div {
+    display: flex;
+    padding: 50px 0;
+  }
+
+  .form-description {
+    display: flex;
+    width: 40%;
+    margin: 0;
+    flex-flow: column nowrap;
+  }
+
+  .form-description h3 {
+    padding: 0;
+  }
+
+  .form {
+    display: flex;
+    width: 40%;
+    margin: 0;
+  }
+
+  .features {
+    padding: 100px 0;
+  }
+
+  .features h2 {
+    width: 97%;
+    padding-bottom: 20px;
+  }
+
+  .features .content-wrapper {
+    justify-content: space-around;
+  }
+
+  .features article {
+    width: 35%;
+    display: flex;
+    align-items: space-around;
+    flex-flow: row wrap;
+    flex-basis: flex-grow;
+  }
+
+  .features-item-description {
+    padding-top: 30px;
+  }
+
+  .reviews {
+    padding: 100px 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .reviews article {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .reviews article h2 {
+    display: flex;
+    width: 80%;
+  }
+
+  .reviews article img {
+    display: flex;
+    width: 50%;
+  }
+
+  .lacrue-review {
+    display: flex;
+    width: 50%;
+    flex-flow: column nowrap;
+  }
+
+  .lacrue-review h3 {
+    display: flex;
+    width: 100%;
+  }
+
+  .lacrue-review p {
+    display: flex;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  footer .content-wrapper {
+    width: 90%;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  footer .contact {
+    display: flex;
+    width: 35%;
+    padding: 100px 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  footer .social {
+    display: flex;
+    width: 35%;
+    padding: 100px 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  footer h4 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .copyright {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+  }
+
+  .copyright p {
+    display: flex;
+  }
+
+  /* ABOUT PAGE */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: wrap;
+  }
+
+  .mission-content h2 {
+    width: 100%;
+  }
+
+  .mission-content p {
+    display: flex;
+    width: 45%;
+    padding-top: 20px;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: wrap;
+  }
+
+  .next-step {
+    width: 50%;
+  }
+
+  /* FAQ PAGE */
+  .questions .content-wrapper article {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .questions .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .questions {
+    flex-basis: shrink;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+
 }
 
 @media print,
